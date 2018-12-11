@@ -1,0 +1,423 @@
+/*==================================================
+	Colors
+==================================================*/
+
+html {
+		--gray-light: #88A2AA;
+		--gray-medium: #516166;
+		--gray-dark: #1B2022;
+
+		--taupe-light: #E6E3DF;
+		--taupe-medium: #ADA296;
+		--taupe-dark: #797169;
+
+		--pink-dark: #9E5D4D;
+		--pink-medium: #E2856E;
+		--pink-light: #F6DAD3;
+
+		--red: #F42C04;
+
+		--black: #0F1A20;
+
+}
+
+/*==================================================
+	Typography
+==================================================*/
+
+html {
+		--font-primary: 'Poppins', serif;
+		--font-secondary: 'Raleway', sans-serif;
+
+		--ratio: 1.333;
+
+		--size-five:		calc( 1rem * var(--ratio));
+		--size-four:	calc( var(--size-five) * var(--ratio));
+		--size-three:	calc( var(--size-four) * var(--ratio));
+		--size-two:		calc( var(--size-three) * var(--ratio));
+		--size-one:		calc( var(--size-two) * var(--ratio));
+
+		font-family: var(--font-secondary);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	color: var(--gray-dark);
+}
+
+h1 {
+	color: var(--gray-dark);
+	font-family: var(--font-primary);
+	font-size: var(--size-one);
+}
+
+h2 {
+	color: var(--gray-dark);
+	font-size: var(--size-two);
+}
+
+h3 {
+	color: var(--gray-dark);
+	font-size: var(--size-three);
+}
+
+h4 {
+	color: var(--gray-dark);
+	font-size: var(--size-four);
+}
+
+h5 {
+	font-size: var(--size-five);
+}
+
+h6 {
+	font-size: var(--size-six);
+}
+
+
+/*==================================================
+	Master Layout
+==================================================*/
+
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	margin: auto;
+}
+
+/*==================================================
+	Header
+==================================================*/
+
+header {
+	background-color: var(--pink-medium);
+	padding-top: 10%;
+}
+
+.logo {
+	display: block;
+	fill: var(--gray-dark);
+	height: auto;
+	padding: 8%;
+	margin: auto;
+	width: 35%;
+}
+
+/*==================================================
+	Navigation
+==================================================*/
+
+.navigation {
+	background: var(--taupe-light);
+	display: block;
+	list-style-type: none;
+	margin: auto;
+	min-height: 100vh;
+	padding: 3rem 10rem 3rem 4rem;
+	position: absolute;
+	top: 0;
+	transform: translate(-100%, 0);
+	transform-origin: 0% 0%;
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	z-index: 0;
+}
+
+.navigation li {
+	padding: 10px 0;
+}
+
+#menu-toggle {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.menu-icon {
+	height: 1.5rem;
+	fill: var(--gray-dark);
+	left: 0;
+	margin: 1rem 0 0 1rem;
+	overflow: visible;
+	position: absolute;
+	top: 0;
+ 	transform-origin: 4px 0px;
+ 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				opacity 0.55s ease;
+	z-index: 1;
+}
+
+#menu-toggle input {
+ 	display: block;
+ 	width: 2rem;
+ 	height: 1.5rem;
+ 	position: absolute;
+ 	top: 1rem;
+ 	left: 1rem;
+ 	cursor: pointer;
+ 	opacity: 0;
+ 	z-index: 2;
+}
+
+.menu-icon path {
+	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+				opacity 0.55s ease;
+}
+
+.menu-icon-3 {
+    transform-origin: 0%;
+}
+
+#menu-toggle input:checked ~ .menu-icon .menu-icon-1 {
+ 	transform: rotate(45deg);
+}
+
+#menu-toggle input:checked ~ .menu-icon .menu-icon-2 {
+	opacity: 0;
+}
+
+#menu-toggle input:checked ~ .menu-icon .menu-icon-3 {
+	transform: rotate(-45deg) translate(-3.1rem);
+}
+
+#menu-toggle input:checked ~ ul
+{
+ 	transform: none;
+}
+
+/*==================================================
+	Hero
+==================================================*/
+
+.hero-image {
+	align-items: center;
+	background-color: #f9f0ed;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23ada296' fill-opacity='0.96' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 70vh;
+	padding: 0 3rem;
+	text-align: center;
+}
+
+.hero-image h4 {
+	text-align: center;
+}
+
+.hero-image span {
+	font-size: var(--size-six);
+	text-align: center;
+}
+
+.hero p {
+	margin: 0 auto 3rem;
+}
+
+.hero-image p strong {
+	font-family: var(--font-primary);
+	font-size: var(--size-two);
+	line-height: 4rem;
+}
+
+
+/*==================================================
+	Buttons
+==================================================*/
+
+.hero-button {
+	background: var(--pink-dark);
+	border: none;
+	border-radius: 20px;
+	color: white;
+	cursor: pointer;
+	font-family: var(--font-primary);
+	font-size: 0.75rem;
+	letter-spacing: 0.1rem;
+	padding: 1rem 2rem;
+	margin-top: 3rem;
+	text-decoration: none;
+}
+
+/*==================================================
+	Dots
+==================================================*/
+
+.dots {
+	padding: 5rem;
+}
+
+.dot-gray-1 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--gray-light);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot-gray-2 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--gray-medium);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot-gray-3 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--gray-dark);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot-pink-1 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--pink-light);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot-pink-2 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--pink-medium);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot-pink-3 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--pink-dark);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot-taupe-1 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--taupe-light);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot-taupe-2 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--taupe-medium);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.dot-taupe-3 {
+	width: 50px;
+	height: 50px;
+	background-color: var(--taupe-dark);
+	border-radius: 50%;
+	display: inline-block;
+}
+
+/*==================================================
+	Footer
+==================================================*/
+
+footer {
+	background-color: var(--gray-dark);
+	color: white;
+	padding: 5rem;
+	text-align: center;
+}
+
+footer p {
+	color: white;
+}
+
+footer ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+footer li {
+
+	display: inline;
+	padding: 0 1rem;
+}
+
+/*==================================================
+	Reset
+==================================================*/
+
+/* border-box makes everything easy */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,input,select,textarea,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,nav,section,main{
+	box-sizing: border-box;
+}
+
+/* Better behavior for lists */
+ul,ol{
+	list-style-position: outside;
+	margin-left: 1.4rem;
+	padding-left: 0;
+}
+
+/* Keep images and videos from overspilling their bounds */
+img, video{
+	display: block;
+	max-width :100%;
+	height: auto;
+}
+
+/* Make hr just a simple line */
+hr{
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1rem 0;
+	padding: 0;
+}
+
+/* Reduce quirky behavior for tables */
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Make input text line up with other text */
+input,select{
+	vertical-align: middle;
+}
+
+/* Kill default borders on fieldsets */
+fieldset{
+	border: none;
+}
+
+/* It's rare to want an inline textarea */
+textarea{
+	display: block;
+}
+
+/* Make sub and sup text line up better */
+sub,sup{
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
+}
+sup{
+	top: -0.5rem;
+}
+sub{
+	bottom: -0.25rem;
+}
+
+/* A fix for SVG display in old versions of IE. */
+svg:not(:root){
+	overflow: hidden;
+}

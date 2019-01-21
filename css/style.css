@@ -413,18 +413,30 @@ input[type="submit"]:hover {
 	Lists
 ==================================================*/
 
-.skills-list {
-	list-style-type: disc;
-	line-height: 1.5rem;
+.experience-list {
+	color: var(--gray-medium);
+	list-style-type: circle;
 	margin: 0 3rem 0;
 }
 
+.resume-header {
+	font-size: var(--size-five);
+	padding-bottom: 0.5rem;
+}
+
+.skills-list {
+	list-style-type: none;
+	line-height: 1.5rem;
+	margin: 0 3rem 7rem;
+}
+
 .skills-list ul {
-	margin-bottom: 0.5rem;
+	margin-bottom: 1rem;
 }
 
 .skills-list ul li {
 	list-style-type: circle;
+	color: var(--gray-medium);
 }
 
 /*==================================================

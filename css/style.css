@@ -393,7 +393,7 @@ input[type="submit"]:hover {
 @media only screen and (min-width: 600px) {
 	.card-container {
 		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
 	}
 }
 
@@ -486,7 +486,10 @@ textarea {
 	flex-shrink: 0;
 	margin: 2rem;
 	width: 500px;
+}
 
+iframe {
+	padding-bottom: 5rem;
 }
 
 /*==================================================

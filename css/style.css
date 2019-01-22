@@ -412,6 +412,13 @@ input[type="submit"]:hover {
 	padding: 2rem 2rem 1rem;
 	text-align: center;
 }
+
+.portfolio-card:hover {
+	border-bottom: 10px solid var(--pink-medium);
+	box-shadow: 0px 0px 10px #b0b0b0;
+	transition: 0.5s ease-out;
+}
+
 .portfolio-card img {
 	border-radius: 5px;
 	margin-bottom: 3rem;

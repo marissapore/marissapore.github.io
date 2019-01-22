@@ -82,13 +82,18 @@ h5 {
 h6 {
 	font-size: var(--size-six);
 }
-.link {
+
+a {
 	color: var(--pink-medium);
-	padding: 0 2rem 0;
+	text-decoration: none;
 }
 
-.link:hover {
-	color: var(--pink-light);
+a:hover {
+	color: var(--pink-dark);
+}
+
+.link {
+	padding: 0 2rem 0;
 }
 
 .subtext {
@@ -431,7 +436,7 @@ input[type="submit"]:hover {
 .experience-list {
 	color: var(--gray-medium);
 	list-style-type: circle;
-	margin: 0 3rem 0;
+	margin: 0 3rem 3rem;
 }
 
 .resume-header {
@@ -446,7 +451,7 @@ input[type="submit"]:hover {
 }
 
 .skills-list ul {
-	margin-bottom: 1rem;
+	margin-bottom: 3rem;
 }
 
 .skills-list ul li {

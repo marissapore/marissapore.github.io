@@ -82,6 +82,14 @@ h5 {
 h6 {
 	font-size: var(--size-six);
 }
+.link {
+	color: var(--pink-medium);
+	padding: 0 2rem 0;
+}
+
+.link:hover {
+	color: var(--pink-light);
+}
 
 .subtext {
 	color: var(--gray-medium);
@@ -489,7 +497,7 @@ textarea {
 }
 
 iframe {
-	padding-bottom: 5rem;
+	padding: 2rem 0 5rem;
 }
 
 /*==================================================

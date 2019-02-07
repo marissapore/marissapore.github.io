@@ -243,6 +243,10 @@ header {
 	padding: 6rem 4rem;
 }
 
+.index-header {
+  margin-bottom: 0;
+}
+
 .site-logo {
 	animation: site-logo 1s ease-out;
 	font-family: var(--font-primary);
@@ -436,7 +440,6 @@ input[type="submit"], button {
 	color: var(--color-text-main);
 	cursor: pointer;
 	display: block;
-	float: right;
 	font-family: var(--font-secondary);
 	font-size: var(--size-six);
 	margin: 3rem auto;
@@ -672,9 +675,84 @@ input[type="email"].error, textarea.error, select.error {
 }
 
 .callout-card-1, .callout-card-2, .callout-card-3 {
+  background-size: cover;
+  background-repeat: no-repeat;
 	border-radius: 5px;
 	box-shadow: 0px 0px 20px #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
+
+.callout-card-1 {
+  background-image: 
+  linear-gradient(
+    rgb(255, 255, 255, 0.35),
+    rgb(255, 255, 255, 0.35)
+    ),
+  url(images/lavender-compressed.jpg);
+  background-position: 50% 50%;
+}
+
+.callout-card-2 {
+  background-image: 
+  linear-gradient(
+    rgb(255, 255, 255, 0.5),
+    rgb(255, 255, 255, 0.5)
+    ),
+  url(images/oil-on-hand.jpg);
+}
+
+.callout-card-3 {
+  background-image: 
+  linear-gradient(
+    rgb(255, 255, 255, 0.35),
+    rgb(255, 255, 255, 0.35)
+    ),
+  url(images/flowers-and-oils-compressed.jpg);
+}
+
+.callout-card-1:hover {
+  background-image: 
+  linear-gradient(
+    rgb(255, 255, 255, 0.55),
+    rgb(255, 255, 255, 0.55)
+    ),
+  url(images/lavender-compressed.jpg);
+  box-shadow: 0px 0px 5px #333;
+  transition: 0.5s ease-out;
+} 
+
+.callout-card-2:hover {
+  background-image: 
+  linear-gradient(
+    rgb(255, 255, 255, 0.7),
+    rgb(255, 255, 255, 0.7)
+    ),
+  url(images/oil-on-hand.jpg);
+  box-shadow: 0px 0px 5px #333;
+  transition: 0.5s ease-out;
+}
+
+.callout-card-3:hover{
+  background-image: 
+  linear-gradient(
+    rgb(255, 255, 255, 0.55),
+    rgb(255, 255, 255, 0.55)
+    ),
+  url(images/flowers-and-oils-compressed.jpg);
+  box-shadow: 0px 0px 5px #333;
+  transition: 0.5s ease-out;
+}
+
+.callout-container span {
+  display: inline-block;
+  font-size: var(--size-four);
+  font-weight: bold;
+  padding: 2rem;
+}
+
 
 /* ===============================================================
 	Grids
@@ -692,6 +770,13 @@ input[type="email"].error, textarea.error, select.error {
 .callout-card-1 {
 	grid-row: 1 / 3;
 	height: 500px;
+  background-image: 
+  linear-gradient(
+    rgb(255, 255, 255, 0.35),
+    rgb(255, 255, 255, 0.35)
+    ),
+  url(images/lavender-compressed.jpg);
+  background-position: 50% 50%;
 }
 
 .card-container {

@@ -62,7 +62,7 @@ h2 {
 
 h3 {
 	border-top: 1px dotted var(--sea-green);
-	color: var(--gray-dark);
+	color: var(--rich-green);
 	font-size: var(--size-three);
 	padding: 4rem 2rem 1rem;
 }
@@ -434,6 +434,7 @@ input[type="submit"]:hover {
 
 .experience-list {
 	color: var(--gray-medium);
+  line-height: 1.5rem;
 	list-style-type: circle;
 	margin: 0 3rem 3rem;
 }

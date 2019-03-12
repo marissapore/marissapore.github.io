@@ -111,7 +111,7 @@ body, html {
 }
 
 main {
-	margin: auto;
+	margin: 0 auto 10rem;
 	max-width: 900px;
 }
 
@@ -309,7 +309,7 @@ header {
   display: flex;
 	justify-content: center;
 	flex-direction: column;
-	height: 70vh;
+	height: 80vh;
 	margin: 0;
 	padding: 0 3rem;
 	text-align: center;

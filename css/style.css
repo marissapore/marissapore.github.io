@@ -658,13 +658,27 @@ figure form {
   Timeline
 ==================================================*/
 
-.content {
-  padding: 2rem 0;
-}
-
 .timeline {
   margin: 6rem auto;
   position: relative;
+}
+
+.row {
+  align-items: center;
+  display: flex;
+  margin: 1rem;
+  padding: 2rem 0;
+  text-align: right;
+}
+
+.row div {
+  flex: 50%;
+  margin: 0 1rem;
+}
+
+.flip {
+  flex-direction: row-reverse;
+  text-align: left;
 }
 
 .timeline:before {
@@ -674,50 +688,39 @@ figure form {
   height: 100%;
   position: absolute;
   width: 1px;
+  z-index: -1;
 }
 
-.timeline ul {
-  margin: 0;
-  padding: 0;
-}
-
-.timeline ul li {
-  box-sizing: border-box;
-  line-height: normal;
-  list-style-type: none;
-  padding: 2rem;
-  position: relative;
-  width: 50%;
-}
-
-.timeline ul li:nth-child(odd) {
-  clear: both;
-  float: left;
-  text-align: right;
-}
-
-.timeline ul li:nth-child(even) {
-  clear: both;
-  float: right;
-  text-align: left;
+.timeline img {
+  max-height: 300px;
+  width: auto;
 }
 
 .timeline time {
+  background-color: white;
   color: var(--sea-green);
   display: block;
   font-family: var(--font-primary);
   font-size: var(--size-five);
-  margin-bottom: 0.5rem;
+  padding: 0.3rem 0;
+  text-align: center;
 }
 
 .timeline-location {
+  background-color: white;
   color: var(--rich-green);
   font-family: var(--font-primary);
+  margin: 1rem 0;
+  padding: 0.3rem 0;
 }
 
 .timeline-school {
+  background-color: white;
   color: var(--slate-gray);
   font-family: var(--font-primary);
+  margin: 1rem 0;
+  padding: 0.3rem 0;
+  text-align: center;
 }
 
 .journey-map-header {
@@ -727,25 +730,29 @@ figure form {
 
 @media (max-width: 800px) {
 
-  .timeline:before {
-    left: 15%;
+  .timeline div {
+    margin-left: 7%;
   }
 
-  .timeline ul {
-    margin-left: 15%;
-  }
-
-  .timeline ul li {
-    width: 80%;
-  }
-
-  .timeline ul li:nth-child(odd) {
-    float: none;
+  .timeline time {
+    margin-left: 7%;
     text-align: left;
   }
 
-  .timeline ul li:nth-child(even) {
-    float: none;
+  .timeline:before {
+    left: 10%;
+  }
+
+  .flip  {
+    text-align: left;
+  }
+
+  .row {
+    display: block;
+    text-align: left;
+  }
+
+  .timeline-location, .timeline-school {
     text-align: left;
   }
 

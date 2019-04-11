@@ -45,7 +45,7 @@ html {
 
 h1, h2, h3, h4, h5, h6, p {
 	color: var(--gray-dark);
-	padding: 0 2rem 0;
+	padding: 0 2.5rem 0;
 }
 
 h1 {
@@ -61,43 +61,43 @@ h2 {
 }
 
 h3 {
-	border-top: 1px dotted var(--sea-green);
 	color: var(--rich-green);
 	font-size: var(--size-three);
-	padding: 4rem 2rem 1rem;
+	padding: 3rem 2.5rem 1rem;
+  margin: 0;
 }
 
 h4 {
 	color: var(--gray-dark);
 	font-size: var(--size-four);
+  margin: 0 0 1rem;
+  padding-top: 2rem;
 }
 
 h5 {
 	color: var(--gray-medium);
 	font-size: var(--size-five);
+  margin: 3rem 0 0;
 }
 
 h6 {
 	font-size: var(--size-six);
 }
 
-a {
-	color: var(--pink-medium);
-	text-decoration: none;
-}
-
-a:hover {
-	color: var(--pink-dark);
+ol li {
+  color: var(--rich-green);
+  margin: 0 2rem 0;
 }
 
 .link {
-	padding: 0 2rem 0;
+  color: var(--sea-green);
+	padding: 0 2.5rem 0;
 }
 
 .subtext {
 	color: var(--gray-medium);
 	font-size: var(--size-six);
-	padding: 0 2rem 0;
+	padding: 0 2.5rem 0;
 }
 
 /*==================================================
@@ -112,7 +112,7 @@ body, html {
 
 main {
 	margin: 0 auto 10rem;
-	max-width: 900px;
+	max-width: 800px;
 }
 
 /*==================================================
@@ -138,16 +138,19 @@ header {
 }
 
 @media only screen and (max-width: 600px) {
+
 	header {
 		display: block;
 		padding: 10% 0 0;
 	}
+
 	.logo {
 		display: block;
 		margin: 0 auto;
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 		width: 35%;
 	}
+
 }
 
 /*==================================================
@@ -193,6 +196,7 @@ header {
   .current-page {
     border: none;
   }
+
 	.current-page:hover {
 		border: none;
 	}
@@ -403,10 +407,12 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (min-width: 600px) {
+
 	.card-container {
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 	}
+  
 }
 
 .portfolio-card {
@@ -432,11 +438,11 @@ input[type="submit"]:hover {
 	Lists
 ==================================================*/
 
-.experience-list {
+.list {
 	color: var(--gray-medium);
   line-height: 1.5rem;
 	list-style-type: circle;
-	margin: 0 3rem 3rem;
+	margin: 2rem 5rem;
 }
 
 .resume-header {
@@ -444,17 +450,17 @@ input[type="submit"]:hover {
 	padding-bottom: 0.5rem;
 }
 
-.skills-list {
+.nested-list {
 	list-style-type: none;
 	line-height: 1.5rem;
 	margin: 0 3rem 7rem;
 }
 
-.skills-list ul {
+.nested-list ul {
 	margin-bottom: 3rem;
 }
 
-.skills-list ul li {
+.nested-list ul li {
 	list-style-type: circle;
 	color: var(--gray-medium);
 }
@@ -482,6 +488,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
 label {
 	display: block;
+  color: var(--rich-green);
 	margin: 0 auto 0.5rem;
 	width: 80%;
 }
@@ -494,6 +501,60 @@ textarea {
   Images
 ==================================================*/
 
+.cs-img {
+  margin: 3rem auto;
+}
+
+.labeled-img, .unlabeled-img {
+  padding: 2rem 0;
+}
+
+.labeled-img img {
+  padding: 0;
+  margin: auto;
+  max-width: 80%;
+}
+
+.labeled-img label {
+  border-left: 2px solid var(--sea-green);
+  color: var(--slate-gray);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 1rem auto;
+  padding: 0.25rem 0 0.25rem 0.5rem;
+  text-align: left;
+  width: 70%;
+}
+
+.unlabeled-img {
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.img-set {
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+  text-align: center;
+}
+
+.img-set img {
+  display: inline-block;
+  margin: auto;
+  max-width: 70%;
+  padding-bottom: 1rem;
+}
+
+.img-set label {
+  border-left: 2px solid var(--sea-green);
+  color: var(--slate-gray);
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 0 auto 1rem;
+  padding: 0.25rem 0 0.25rem 0.5rem;
+  text-align: left;
+  width: 70%;
+}
+
 .profile-image {
   border-radius: 50%;
   box-shadow: 0 0 15px lightgrey;
@@ -502,10 +563,24 @@ textarea {
   width: 40%;
 }
 
+.border-radius {
+  border-radius: 3%/6%;
+}
+
 @media (min-width: 600px) {
+
+  .border-radius {
+    border-radius: 2%/4%;
+  }
+
+  .img-set img {
+    max-width: 40%;
+  }
+
   .profile-image {
     width: 30%;
   }
+
 }
 
 /*==================================================

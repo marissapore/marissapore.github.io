@@ -89,6 +89,13 @@ ol li {
   margin: 0 2rem 0;
 }
 
+blockquote {
+  background-color: rgba(135, 179, 141, 0.5);
+  color: var(--gray-dark);
+  font-style: italic;
+  padding: 1rem;
+}
+
 .link {
   color: var(--sea-green);
 	padding: 0 2.5rem 0;
@@ -431,7 +438,32 @@ input[type="submit"]:hover {
 
 .portfolio-card img {
 	border-radius: 5px;
-	margin-bottom: 3rem;
+  margin: 1rem 0;
+}
+
+.portfolio-card div {
+  font-size: var(--size-six);
+}
+
+.two-column-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  margin: 2rem 0 5rem;
+}
+
+.two-column-container img {
+  padding: 1rem;
+}
+
+.two-column-container div {
+  padding: 1rem;
+}
+
+.two-column-container div p {
+  padding: 2.5rem 2rem 0 0;
+  margin: 0;
 }
 
 /*==================================================
@@ -502,6 +534,7 @@ textarea {
 ==================================================*/
 
 .cs-img {
+  border-radius: 20px;
   margin: 3rem auto;
 }
 
@@ -523,7 +556,7 @@ textarea {
   margin: 1rem auto;
   padding: 0.25rem 0 0.25rem 0.5rem;
   text-align: left;
-  width: 70%;
+  width: 60%;
 }
 
 .unlabeled-img {

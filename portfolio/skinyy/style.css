@@ -763,7 +763,7 @@ input[type="email"].error, textarea.error, select.error {
 	grid-gap: 1rem;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
-	margin: 2rem 8rem;
+	margin: 2rem 8rem 8rem;
 
 }
 

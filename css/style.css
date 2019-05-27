@@ -6,7 +6,6 @@ html {
 		--gray-medium: #516166;
 		--gray-dark: #343434;
     --gray-darker: #1B2022;
-
     
     --eggshell: #EFECCA;
     --gold: #FDDB60;
@@ -15,7 +14,6 @@ html {
     --slate-gray: #818479;
     --sea-green: #87B38D;
     --rich-green: #073B3A;
-
 }
 
 /*==================================================
@@ -534,7 +532,6 @@ textarea {
 ==================================================*/
 
 .cs-img {
-  border-radius: 20px;
   margin: 3rem auto;
 }
 
@@ -641,104 +638,6 @@ iframe {
 /*==================================================
 	Design Element Examples
 ==================================================*/
-
-.dots {
-	display: block;
-	margin: 0 auto;
-	padding: 2rem;
-	text-align: center;
-}
-
-.dot-1 {
-	width: 100px;
-	height: 100px;
-	background-color: var(--gray-medium);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.dot-2 {
-	width: 100px;
-	height: 100px;
-	background-color: var(--gray-dark);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.dot-3 {
-	width: 100px;
-	height: 100px;
-	background-color: var(--gray-darker);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.dot-4 {
-	width: 100px;
-	height: 100px;
-	background-color: var(--eggshell);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.dot-5 {
-	width: 100px;
-	height: 100px;
-	background-color: var(--gold);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.dot-6 {
-	width: 100px;
-	height: 100px;
-	background-color: var(--ash-gray);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.dot-7 {
-	width: 100px;
-	height: 100px;
-	background-color: var(--slate-gray);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.dot-8 {
-	width: 100px;
-	height: 100px;
-	background-color: var(--sea-green);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.dot-9 {
-	width: 100px;
-	height: 100px;
-	background-color: var(--rich-green);
-	border-radius: 50%;
-	display: inline-block;
-}
-
-.example-primary {
-	color: var(--gray-dark);
-	font-family: var(--font-primary);
-	font-size: var(--size-two);
-	text-decoration: none;
-}
-
-.example-primary:hover, .example-secondary:hover {
-	color: var(--pink-dark);
-	text-decoration: underline;
-}
-
-.example-secondary {
-	color: var(--gray-dark);
-	font-family: var(--font-secondary);
-	font-size: var(--size-two);
-	text-decoration: none;
-}
 
 figure {
 	background-color: var(--eggshell);

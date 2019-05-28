@@ -395,8 +395,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
 	background: var(--sea-green);
-	transform: translateY(-5px);
-	transition: all 0.3s ease-out;
 }
 
 /*==================================================

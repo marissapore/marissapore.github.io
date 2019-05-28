@@ -793,11 +793,17 @@ footer li {
 }
 
 footer a {
-	color: var(--gold);
+	text-decoration: none;
 }
 
 footer a:hover {
 	color: var(--eggshell);
+}
+
+.footer-icon {
+  fill: var(--gold);
+  height: 40px;
+  width: 40px;
 }
 
 /*==================================================

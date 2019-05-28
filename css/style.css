@@ -6,6 +6,9 @@ html {
 		--gray-medium: #516166;
 		--gray-dark: #343434;
     --gray-darker: #1B2022;
+
+    --periwinkle: #9296B8;
+    --space-cadet: #3E505B;
     
     --eggshell: #EFECCA;
     --gold: #FDDB60;
@@ -13,7 +16,6 @@ html {
 
     --slate-gray: #818479;
     --sea-green: #87B38D;
-    --rich-green: #073B3A;
 }
 
 /*==================================================
@@ -59,7 +61,7 @@ h2 {
 }
 
 h3 {
-	color: var(--rich-green);
+	color: var(--space-cadet);
 	font-size: var(--size-three);
 	padding: 3rem 2.5rem 1rem;
   margin: 0;
@@ -83,7 +85,7 @@ h6 {
 }
 
 ol li {
-  color: var(--rich-green);
+  color: var(--space-cadet);
   margin: 0 2rem 0;
 }
 
@@ -95,7 +97,7 @@ blockquote {
 }
 
 .link {
-  color: var(--sea-green);
+  color: var(--periwinkle);
 	padding: 0 2.5rem 0;
 }
 
@@ -126,7 +128,7 @@ main {
 
 header {
 	align-items: flex-end;
-	background-color: var(--gold);
+	background-color: var(--periwinkle);
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -163,24 +165,19 @@ header {
 ==================================================*/
 
 .current-page {
-	border-left: 1px dotted var(--gray-medium);
-	border-right: 1px dotted var(--gray-medium);
+	border-left: 1px dotted var(--space-cadet);
+	border-right: 1px dotted var(--space-cadet);
 	font-family: var(--font-primary);
 }
 
-.current-page:hover {
-	border-left: 1px dotted var(--rich-green);
-	border-right: 1px dotted var(--rich-green);
-}
-
 .navigation a {
-	color: var(--gray-medium);
+	color: var(--gray-dark);
 	text-decoration: none;
 	-webkit-font-smoothing: antialiased;
 }
 
 .navigation a:hover {
-	color: var(--rich-green);
+	color: var(--space-cadet);
 }
 
 .navigation li {
@@ -216,7 +213,7 @@ header {
 	}
 
 	.navigation a:hover {
-		color: var(--rich-green);
+		color: var(--space-cadet);
 	}
 
 	.navigation li {
@@ -234,13 +231,13 @@ header {
 	}
 
 	input:checked ~ .navigation {
-		background: var(--eggshell);
+		background: white;
 		transform: none;
 	 	transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 	}
 
 	input:not(:checked) ~ .navigation {
-		background: var(--eggshell);
+		background: white;
 		transform: translate(-100%, 0);
 		transform-origin: 0% 0%;
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
@@ -380,7 +377,7 @@ header {
 }
 
 input[type="submit"] {
-	background-color: var(--rich-green);
+	background-color: var(--periwinkle);
 	border-radius: 20px;
 	color: white;
 	cursor: pointer;
@@ -516,7 +513,7 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
 
 label {
 	display: block;
-  color: var(--rich-green);
+  color: var(--space-cadet);
 	margin: 0 auto 0.5rem;
 	width: 80%;
 }
@@ -634,32 +631,6 @@ iframe {
 }
 
 /*==================================================
-	Design Element Examples
-==================================================*/
-
-figure {
-	background-color: var(--eggshell);
-	border-radius: 10px;
-	color: var(--gray-dark);
-	font-family: var(--font-primary);
-	margin-bottom: 3rem;
-	padding: 1rem;
-}
-
-figure h3 {
-	border-top: none;
-	padding: 0 2rem 0;
-}
-
-figure h5 {
-	color: var(--gray-dark);
-}
-
-figure form {
-	margin: 2rem 0 4rem;
-}
-
-/*==================================================
   Timeline
 ==================================================*/
 
@@ -713,7 +684,7 @@ figure form {
 
 .timeline-location {
   background-color: white;
-  color: var(--rich-green);
+  color: var(--space-cadet);
   font-family: var(--font-primary);
   margin: 1rem 0;
   padding: 0.3rem 0;
@@ -794,14 +765,14 @@ footer a {
 	text-decoration: none;
 }
 
-footer a:hover {
-	color: var(--eggshell);
-}
-
 .footer-icon {
-  fill: var(--gold);
+  fill: var(--periwinkle);
   height: 40px;
   width: 40px;
+}
+
+.footer-icon:hover {
+  fill: var(--ash-gray);
 }
 
 /*==================================================

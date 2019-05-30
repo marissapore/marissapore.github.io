@@ -8,7 +8,8 @@ html {
     --gray-darker: #1B2022;
 
     --periwinkle: #9296B8;
-    --space-cadet: #3E505B;
+    --space-cadet: #536B7A;
+    --raisin: #483C46;
     
     --eggshell: #EFECCA;
     --gold: #FDDB60;
@@ -61,21 +62,21 @@ h2 {
 }
 
 h3 {
-	color: var(--space-cadet);
+	color: var(--raisin);
 	font-size: var(--size-three);
 	padding: 3rem 2.5rem 1rem;
   margin: 0;
 }
 
 h4 {
-	color: var(--gray-dark);
+	color: var(--space-cadet);
 	font-size: var(--size-four);
   margin: 0 0 1rem;
   padding-top: 2rem;
 }
 
 h5 {
-	color: var(--gray-medium);
+	color: var(--ash-gray);
 	font-size: var(--size-five);
   margin: 3rem 0 0;
 }
@@ -90,9 +91,10 @@ ol li {
 }
 
 blockquote {
-  background-color: rgba(135, 179, 141, 0.5);
+  background-color: rgba(135, 179, 141, 0.2);
   color: var(--gray-dark);
   font-style: italic;
+  margin-bottom: 2rem;
   padding: 1rem;
 }
 
@@ -391,7 +393,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-	background: var(--sea-green);
+	background: var(--raisin);
 }
 
 /*==================================================
@@ -416,17 +418,15 @@ input[type="submit"]:hover {
 }
 
 .portfolio-card {
-	border-bottom: 10px solid var(--ash-gray);
 	border-radius: 5px;
 	box-shadow: 0px 0px 20px #ddd;
-	padding: 2rem 2rem 1rem;
+	padding: 1.5rem 2rem;
 	text-align: center;
 }
 
 .portfolio-card:hover {
-	border-bottom: 10px solid var(--sea-green);
-	box-shadow: 0px 0px 10px #b0b0b0;
-	transition: 0.5s ease-out;
+	box-shadow: 0px 0px 10px #A5A5A5;
+	transition: 0.3s ease-out;
 }
 
 .portfolio-card img {
@@ -434,7 +434,13 @@ input[type="submit"]:hover {
   margin: 1rem 0;
 }
 
+.portfolio-card span {
+  color: var(--raisin);
+  font-weight: bold;
+}
+
 .portfolio-card div {
+  color: var(--gray-medium);
   font-size: var(--size-six);
 }
 
@@ -541,7 +547,7 @@ textarea {
 }
 
 .labeled-img label {
-  border-left: 2px solid var(--sea-green);
+  border-left: 2px solid var(--ash-gray);
   color: var(--slate-gray);
   font-style: italic;
   font-size: 0.9rem;
@@ -570,7 +576,7 @@ textarea {
 }
 
 .img-set label {
-  border-left: 2px solid var(--sea-green);
+  border-left: 2px solid var(--ash-gray);
   color: var(--slate-gray);
   font-style: italic;
   font-size: 0.9rem;
@@ -658,7 +664,7 @@ iframe {
 }
 
 .timeline:before {
-  background: var(--sea-green);
+  background: var(--ash-gray);
   content: '';
   left: 50%;
   height: 100%;
@@ -674,7 +680,7 @@ iframe {
 
 .timeline time {
   background-color: white;
-  color: var(--sea-green);
+  color: var(--ash-gray);
   display: block;
   font-family: var(--font-primary);
   font-size: var(--size-five);
@@ -692,7 +698,7 @@ iframe {
 
 .timeline-school {
   background-color: white;
-  color: var(--slate-gray);
+  color: var(--raisin);
   font-family: var(--font-primary);
   margin: 1rem 0;
   padding: 0.3rem 0;
@@ -747,7 +753,7 @@ footer {
 }
 
 footer p {
-	color: var(--sea-green);
+	color: var(--ash-gray);
 	margin: 0;
 }
 

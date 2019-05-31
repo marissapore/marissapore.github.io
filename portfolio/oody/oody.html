@@ -111,6 +111,8 @@
   <p>We believe that building this solution will allow young people to become more cognizant of their spendings, and reduce the pains of budgeting</p>
   <p>We will know we are successful when our users are continuously logging their transactions</p>
 
+  <button onclick="topFunction()" id="top-scroll" title="Go to top">&uarr;</button>
+
 	</main>
 
 	<footer>
@@ -160,6 +162,40 @@
       <p>©Marissa Pore 2019</p>
     </nav>
   </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function(){
+
+      const modal = document.querySelector('dialog');
+      const open = document.getElementById('open-modal');
+      const close = document.getElementById('close-modal');
+
+      open.addEventListener('click', () => {
+        modal.showModal();
+      });
+
+      modal.addEventListener('click', event => {
+      if (event.target === modal) {
+      modal.close('cancelled');
+      }
+      });
+
+    });
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 1500 || document.documentElement.scrollTop > 1500) {
+            document.getElementById("top-scroll").style.display = "block";
+        } else {
+             document.getElementById("top-scroll").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+  </script>
 
 </body>
 </html>

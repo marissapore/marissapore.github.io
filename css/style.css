@@ -46,6 +46,7 @@ html {
 
 h1, h2, h3, h4, h5, h6, p {
 	color: var(--gray-dark);
+	margin: 0 0 1rem;
 	padding: 0 2.5rem 0;
 }
 
@@ -53,6 +54,7 @@ h1 {
 	color: var(--gray-dark);
 	font-family: var(--font-primary);
 	font-size: var(--size-one);
+	margin: 6rem 0 3rem;
 }
 
 h2 {
@@ -64,7 +66,7 @@ h2 {
 h3 {
 	color: var(--raisin);
 	font-size: var(--size-three);
-	padding: 3rem 2.5rem 1rem;
+	padding: 1rem 2.5rem;
   margin: 0;
 }
 
@@ -78,7 +80,7 @@ h4 {
 h5 {
 	color: var(--ash-gray);
 	font-size: var(--size-five);
-  margin: 3rem 0 0;
+  margin: 3rem 0 2rem;
 }
 
 h6 {
@@ -105,8 +107,10 @@ blockquote {
 
 .subtext {
 	color: var(--gray-medium);
+	display: block;
 	font-size: var(--size-six);
-	padding: 0 2.5rem 0;
+	margin: 0;
+	padding: 0 2.5rem 1rem;
 }
 
 /*==================================================
@@ -125,7 +129,7 @@ main {
 }
 
 /*==================================================
-	Header
+	Headers
 ==================================================*/
 
 header {
@@ -326,7 +330,7 @@ header {
 	justify-content: center;
 	flex-direction: column;
 	height: 80vh;
-	margin: 0;
+	margin: 0 0 10rem;
 	padding: 0 3rem;
 	text-align: center;
 	width: 100vw !important;
@@ -434,7 +438,7 @@ input[type="submit"]:hover {
 	grid-gap: 2rem;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
-	margin: 0 2rem 5rem;
+	margin: 5rem 2rem 5rem;
 }
 
 @media only screen and (min-width: 600px) {
@@ -502,7 +506,7 @@ input[type="submit"]:hover {
 	color: var(--gray-medium);
   line-height: 1.5rem;
 	list-style-type: circle;
-	margin: 2rem 5rem;
+	margin: 0 5rem 2rem;
 }
 
 .resume-header {
@@ -619,7 +623,7 @@ textarea {
   border-radius: 50%;
   box-shadow: 0 0 15px lightgrey;
   height: auto;
-  margin: 5rem auto;
+  margin: 0 auto 3rem;
   width: 40%;
 }
 

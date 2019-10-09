@@ -502,10 +502,16 @@ input[type="submit"]:hover {
 	Lists
 ==================================================*/
 
-.list {
+.unordered-list {
 	color: var(--gray-medium);
   line-height: 1.5rem;
 	list-style-type: circle;
+	margin: 0 5rem 2rem;
+}
+
+.ordered-list {
+	color: var(--gray-medium);
+  	line-height: 1.5rem;
 	margin: 0 5rem 2rem;
 }
 

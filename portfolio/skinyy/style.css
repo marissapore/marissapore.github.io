@@ -188,6 +188,15 @@ a:hover {
 	color: var(--color-pink-dark);
 }
 
+span a {
+	color: var(--color-text-main);
+	text-decoration: none;
+}
+
+span a:hover {
+	color: var(--color-text-main);
+}
+
 ul {
 	color: var(--color-text-secondary);
 	font-size: var(--size-six);
@@ -483,7 +492,7 @@ input[type="submit"]:active, button:active {
 
 summary {
 	background-color: lavender;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 	font-size: var(--size-five);
 	padding: 1rem 2rem;
 	text-align: left;
@@ -686,7 +695,7 @@ input[type="email"].error, textarea.error, select.error {
 }
 
 .callout-card-1 {
-  background-image: 
+  background-image:
   linear-gradient(
     rgb(255, 255, 255, 0.35),
     rgb(255, 255, 255, 0.35)
@@ -696,7 +705,7 @@ input[type="email"].error, textarea.error, select.error {
 }
 
 .callout-card-2 {
-  background-image: 
+  background-image:
   linear-gradient(
     rgb(255, 255, 255, 0.5),
     rgb(255, 255, 255, 0.5)
@@ -705,7 +714,7 @@ input[type="email"].error, textarea.error, select.error {
 }
 
 .callout-card-3 {
-  background-image: 
+  background-image:
   linear-gradient(
     rgb(255, 255, 255, 0.35),
     rgb(255, 255, 255, 0.35)
@@ -714,7 +723,7 @@ input[type="email"].error, textarea.error, select.error {
 }
 
 .callout-card-1:hover {
-  background-image: 
+  background-image:
   linear-gradient(
     rgb(255, 255, 255, 0.55),
     rgb(255, 255, 255, 0.55)
@@ -722,10 +731,10 @@ input[type="email"].error, textarea.error, select.error {
   url(images/lavender-compressed.jpg);
   box-shadow: 0px 0px 5px #333;
   transition: 0.5s ease-out;
-} 
+}
 
 .callout-card-2:hover {
-  background-image: 
+  background-image:
   linear-gradient(
     rgb(255, 255, 255, 0.7),
     rgb(255, 255, 255, 0.7)
@@ -736,7 +745,7 @@ input[type="email"].error, textarea.error, select.error {
 }
 
 .callout-card-3:hover{
-  background-image: 
+  background-image:
   linear-gradient(
     rgb(255, 255, 255, 0.55),
     rgb(255, 255, 255, 0.55)
@@ -770,7 +779,7 @@ input[type="email"].error, textarea.error, select.error {
 .callout-card-1 {
 	grid-row: 1 / 3;
 	height: 500px;
-  background-image: 
+  background-image:
   linear-gradient(
     rgb(255, 255, 255, 0.35),
     rgb(255, 255, 255, 0.35)
@@ -835,8 +844,5 @@ footer li {
 	font-weight: bold;
 	line-height: 1.5rem;
 	list-style: none;
-	padding: 1rem;	
+	padding: 1rem;
 }
-
-
-
